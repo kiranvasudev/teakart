@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+</head>
+<body>
+  <div class="container hide-on-med-and-down center">
+    <a href="#" class="brand-logo">Logo</a>
+  </div>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" data-activates="teakart-nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#!" class="brand-logo hide-on-med-and-up">Logo</a>
+      <div class="container">
+        <ul class="left hide-on-med-and-down">
+          <li><a href="#">Tea</a></li>
+          <li><a href="#">Coffee</a></li>
+          <li class="active"><a href="#">Chocolate</a></li>
+          <li><a href="#">Spices & Nuts</a></li>
+          <li><a href="#">Aromatherapy</a></li>
+          <li><a href="#">Cosmetics</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Consultancy & Training</a></li>
+          <li><a href="#">Tea Tourism</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+      <ul class="side-nav" id="teakart-nav-mobile">
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header" style="background:#72bc69; color:white;">Tea<i class="material-icons"  style="color:white;">arrow_drop_down</i></a>
+              <div class="collapsible-body" style="background:#7dcc74;">
+                <ul>
+                  <li><a href="#!">Black Tea</a></li>
+                  <li><a href="#!">Green Tea</a></li>
+                  <li><a href="#!">Oolong Tea</a></li>
+                  <li><a href="#!">Speciality Tea</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header" style="background:#b77d14; color:white;">Coffee<i class="material-icons" style="color:white;">arrow_drop_down</i></a>
+              <div class="collapsible-body" style="background:#d68812;">
+                <ul>
+                  <li><a href="#!">Coffee beans</a></li>
+                  <li><a href="#!">R & G</a></li>
+                  <li><a href="#!">Instant</a></li>
+                  <li><a href="#!">Ready Mix</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="active"><a href="#">Chocolate</a></li>
+        <li><a href="#">Spices & Nuts</a></li>
+        <li><a href="#">Aromatherapy</a></li>
+        <li><a href="#">Cosmetics</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Consultancy & Training</a></li>
+        <li><a href="#">Tea Tourism</a></li>
+        <li><a href="#">Sustainability</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <!-- <script src="js/jquery-3.1.1.js"></script> -->
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+  <!-- User script -->
+  <script>
+  $( document ).ready(function(){
+    $(".button-collapse").sideNav();
+  })
+  </script>
+</body>
+</html>
