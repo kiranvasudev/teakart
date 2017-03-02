@@ -1,5 +1,4 @@
 body{
-  background: black;
 }
 
 .nav-wrapper ul li a{
@@ -74,6 +73,27 @@ body{
   height: 275px !important;
 }
 
+#contact-parallax{
+  height: 500px !important;
+}
+
+.contact-form-wrapper{
+  background: white;
+  border-radius: 15px;
+}
+
+.contact-form-wrapper h4{
+  background: #f7e0c4;
+  padding: 10px;
+  margin: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.contact-form-wrapper form{
+  padding: 20px !important;
+}
+
 /* Media Queries */
 
 /* Small devices (tablets, 768px and up) for header */
@@ -86,4 +106,13 @@ body{
   #vision-parallax{
     height: 350px !important;
   }
+
+  #contact-parallax{
+    height: 700px !important;
+  }
+
+  .contact-form-wrapper form{
+    padding: 10px !important;
+  }
+
 }
