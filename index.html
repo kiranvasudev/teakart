@@ -256,7 +256,7 @@
       </div>
       <!-- Navbar for mobile -->
       <a href="#" data-activates="teakart-nav-mobile" class="button-collapse"><i class="material-icons" style="color:black;">menu</i></a>
-      <a href="#!" class="brand-logo hide-on-med-and-up" style="color: purple;">Logo</a>
+      <a href="#!" class="brand-logo hide-on-large-only" style="color: purple;">Logo</a>
       <ul class="side-nav" id="teakart-nav-mobile">
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
@@ -423,7 +423,47 @@
   </div>
 
   <!-- Contact Form -->
-  <div class="section" style="background:white;">
+  <div class="section">
+    <div class="parallax-container valign-wrapper" id="contact-parallax">
+      <div class="container valign contact-form-wrapper">
+        <h4 class="center-align">Contact Us</h4>
+        <div class="divider" style="height:2px; background: #ccc;"></div>
+        <div class="row">
+          <form class="col s12" style="padding-top:15px; padding-bottom:15px;">
+            <div class="row">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="landing-contact-name" placeholder="John Doe" type="text" class="validate">
+                <label for="landing-contact-name">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">mail</i>
+                <input id="landing-contact-email" type="email" class="validate" placeholder="johndoe@xyz.com">
+                <label for="landing-contact-email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m8 offset-m2">
+                <i class="material-icons prefix">title</i>
+                <textarea id="landing-contact-message" class="materialize-textarea" placeholder="Message"></textarea>
+                <label for="landing-contact-message">Textarea</label>
+              </div>
+            </div>
+            <button class="btn waves-effect waves-light" style="margin:0 auto; display:block;" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="parallax">
+        <img src="img/contact-back.jpg">
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="section" style="background:white;">
     <div class="container">
       <h4 class="center-align">Contact Us</h4>
       <div class="row">
@@ -455,7 +495,7 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--footer-->
   <footer class="page-footer">
@@ -494,6 +534,7 @@
     </div>
   </footer>
 
+
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
   <!-- <script src="js/jquery-3.1.1.js"></script> -->
@@ -508,8 +549,7 @@
     $(".dropdown-button").dropdown({
       hover: true
     });
-    $('#vision-parallax .parallax').parallax();
-
+    $('#vision-parallax .parallax, #contact-parallax .parallax').parallax();
   })
   </script>
 </body>
