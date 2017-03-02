@@ -69,3 +69,21 @@ body{
 #drop-nav-sustainability-img{
   background-image: url("../img/sustain.jpg");
 }
+
+#vision-parallax{
+  height: 275px !important;
+}
+
+/* Media Queries */
+
+/* Small devices (tablets, 768px and up) for header */
+@media (min-width: 768px){
+
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 992px) {
+  #vision-parallax{
+    height: 350px !important;
+  }
+}
