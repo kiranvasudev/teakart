@@ -5,7 +5,10 @@ body{
 .nav-wrapper ul li a{
   color: black;
 }
-
+#teakart-nav-mobile a{
+  color:white;
+  font-weight: normal;
+}
 #tea-dropdown, #coffee-dropdown, #chocolate-dropdown, #spices-nuts-dropdown, #aroma-dropdown, #cosmetics-dropdown, #accessories-dropdown, #consultancy-dropdown, #tea-tourism-dropdown, #sustainability-dropdown{
   width: 100% !important;
   left: 0 !important;
