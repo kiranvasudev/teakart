@@ -1,0 +1,68 @@
+body{
+  background: black;
+}
+
+.nav-wrapper ul li a{
+  color: black;
+}
+
+#tea-dropdown, #coffee-dropdown, #chocolate-dropdown, #spices-nuts-dropdown, #aroma-dropdown, #cosmetics-dropdown, #accessories-dropdown, #consultancy-dropdown, #tea-tourism-dropdown, #sustainability-dropdown{
+  width: 100% !important;
+  left: 0 !important;
+  top: 64px !important;
+  overflow: hidden;
+  height: 32vh !important;
+}
+
+.drop-nav-item-container{
+  display: inline-block;
+  width: 15%;
+}
+
+#drop-nav-tea-img, #drop-nav-coffee-img,#drop-nav-chocolate-img,#drop-nav-spices-img,#drop-nav-aroma-img,#drop-nav-cosmetics-img,#drop-nav-accessories-img,#drop-nav-consultancy-img,#drop-nav-tea-tourism-img,#drop-nav-sustainability-img{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 75%;
+}
+
+#drop-nav-tea-img{
+  background-image: url("../img/tea.jpg");
+}
+
+#drop-nav-coffee-img{
+  background-image: url("../img/coffee.jpg");
+}
+
+#drop-nav-chocolate-img{
+  background-image: url("../img/choc.jpg");
+}
+
+#drop-nav-spices-img{
+  background-image: url("../img/spices.jpg");
+}
+
+#drop-nav-aroma-img{
+  background-image: url("../img/aroma.jpg");
+}
+
+#drop-nav-cosmetics-img{
+  background-image: url("../img/cosmetics.jpg");
+}
+
+#drop-nav-accessories-img{
+  background-image: url("../img/accessory.jpg");
+}
+
+#drop-nav-consultancy-img{
+  background-image: url("../img/consultancy.jpg");
+}
+
+#drop-nav-tea-tourism-img{
+  background-image: url("../img/tourism.jpg");
+}
+
+#drop-nav-sustainability-img{
+  background-image: url("../img/sustain.jpg");
+}
