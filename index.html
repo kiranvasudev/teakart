@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
 </head>
-<body>
+<body style="height:200vh;">
   <!-- Tea Dropdown Structure -->
   <div id="tea-dropdown" class="dropdown-content">
     <div class="row" style="margin-bottom:0; height:100%;">
@@ -253,7 +253,7 @@
       </div>
       <!-- Navbar for mobile -->
       <a href="#" data-activates="teakart-nav-mobile" class="button-collapse"><i class="material-icons" style="color:black;">menu</i></a>
-      <a href="#!" class="brand-logo hide-on-med-and-up" style="color:purple;">Logo</a>
+      <a href="#!" class="brand-logo hide-on-med-and-up" style="color: purple;">Logo</a>
       <ul class="side-nav" id="teakart-nav-mobile">
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
@@ -409,6 +409,15 @@
     </div>
   </nav>
 
+  <div class="section">
+    <div class="parallax-container" id="vision-parallax">
+      <h4>Vision here...</h4>
+      <div class="parallax">
+        <img src="img/vision.jpg">
+      </div>
+    </div>
+  </div>
+
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
   <!-- <script src="js/jquery-3.1.1.js"></script> -->
@@ -423,6 +432,8 @@
     $(".dropdown-button").dropdown({
       hover: true
     });
+    $('#vision-parallax .parallax').parallax();
+
   })
   </script>
 </body>
