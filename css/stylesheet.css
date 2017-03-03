@@ -1,22 +1,23 @@
 body{
-/*  background: black;*/
+  /*  background: black;*/
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
 main {
-   flex: 1 0 auto;
- }
-
+  flex: 1 0 auto;
+}
 
 .nav-wrapper ul li a{
   color: black;
 }
+
 #teakart-nav-mobile a{
   color:white;
   font-weight: normal;
 }
+
 #tea-dropdown, #coffee-dropdown, #chocolate-dropdown, #spices-nuts-dropdown, #aroma-dropdown, #cosmetics-dropdown, #accessories-dropdown, #consultancy-dropdown, #tea-tourism-dropdown, #sustainability-dropdown{
   width: 100% !important;
   left: 0 !important;
@@ -78,6 +79,48 @@ main {
   background-image: url("../img/sustain.jpg");
 }
 
+/* Code for Owl Carousel */
+.landing-slideshow .owl-item {
+  width: 310px !important;
+  height: 310px !important;
+}
+
+.landing-slideshow .owl-carousel .item {
+  height: 100%;
+  width: 100%;
+}
+
+.landing-slideshow .owl-carousel .owl-item img {
+  height: 100%;
+  position: relative;
+}
+
+.tea-text{
+  position: absolute;
+  bottom: 0;
+  margin: 0 5px;
+  padding: 0 5px;
+  background: rgb(255, 255, 255); /* fallback color */
+  background: rgba(255, 255, 255, 0.7);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tea-slider-p{
+  padding-left: 2px;
+  width: 100%;
+}
+
+.tea-slider-content {
+  color: black;
+  /*font: bold 24px/45px Helvetica, Sans-Serif; */
+  font:bold 17px Helvetica,Sans-Serif;
+  /*letter-spacing: -1px;  */
+  padding-left: 6px;
+}
+
+/* End of code for Owl Carousel */
+
 #vision-parallax{
   height: 275px !important;
 }
@@ -122,6 +165,11 @@ main {
 
   .contact-form-wrapper form{
     padding: 10px !important;
+  }
+
+  .landing-slideshow .owl-item {
+    width: 420px !important;
+    height: 420px !important;
   }
 
 }
