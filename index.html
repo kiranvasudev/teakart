@@ -13,6 +13,10 @@
   <!--font awesome-->
   <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
 
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css" />
+
   <!-- User stylesheets -->
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
@@ -412,6 +416,53 @@
     </div>
   </nav>
 
+  <!-- Landing Slideshow -->
+  <div class="section landing-slideshow">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="img/download.jpg" >
+            <div class="tea-text">
+              <p class="tea-slider-p"><span class="tea-slider-content">The most amazing tea ever.The most amazing tea ever amazing tea ever amazing tea ever</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/download.jpg" >
+            <div class="tea-text">
+              <p class="tea-slider-p"><span class="tea-slider-content">The most amazing tea ever.The most amazing tea ever amazing tea ever amazing tea ever</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/download.jpg" >
+            <div class="tea-text">
+              <p class="tea-slider-p"><span class="tea-slider-content">The most amazing tea ever.The most amazing tea ever amazing tea ever amazing tea ever</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/download.jpg" >
+            <div class="tea-text">
+              <p class="tea-slider-p"><span class="tea-slider-content">The most amazing tea ever.The most amazing tea ever amazing tea ever amazing tea ever</span></p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/download.jpg" >
+            <div class="tea-text">
+              <p class="tea-slider-p"><span class="tea-slider-content">The most amazing tea ever.The most amazing tea ever amazing tea ever amazing tea ever</span></p>
+            </div>
+          </div>
+          <div class="item">
+
+            <img src="img/download.jpg" >
+            <div class="tea-text">
+              <p class="tea-slider-p"><span class="tea-slider-content">The most amazing tea ever.The most amazing tea ever amazing tea ever amazing tea ever</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Vision Parallax -->
   <div class="section">
     <div class="parallax-container" id="vision-parallax">
@@ -462,7 +513,7 @@
       </div>
     </div>
   </div>
-  
+
   <!--footer-->
   <footer class="page-footer">
     <div class="container">
@@ -495,7 +546,7 @@
     <div class="footer-copyright">
       <div class="container">
         © 2017 TeaKart Ltd
-      <!--  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+        <!--  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
       </div>
     </div>
   </footer>
@@ -503,10 +554,17 @@
 
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-  <!-- <script src="js/jquery-3.1.1.js"></script> -->
+
+  <!-- Owl Carousel -->
+  <script src="js/owl.carousel.min.js"></script>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+  <!--[if lt IE 9]> -->
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <!--[endif]-->
 
   <!-- User script -->
   <script>
@@ -517,6 +575,31 @@
     });
     $('#vision-parallax .parallax, #contact-parallax .parallax').parallax();
   })
+    $('.landing-slideshow .owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          width:20,
+          autoWidth:true,
+          nav: false
+        },
+        600: {
+          items: 3,
+          autoWidth:true,
+          nav: false
+        },
+        1000: {
+          items: 3,
+          nav: false,
+          loop: true,
+          autoWidth:true,
+          margin: 20
+        }
+      }
+    })
   </script>
 </body>
 </html>
