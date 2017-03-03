@@ -121,6 +121,14 @@ main {
 
 /* End of code for Owl Carousel */
 
+/* For Featured Products */
+
+.featured-product-img-wrapper{
+  height: 250px;
+}
+
+/* End of code of Featured Products */
+
 #vision-parallax{
   height: 275px !important;
 }
@@ -148,6 +156,12 @@ main {
 
 /* Media Queries */
 
+/* Media query for landscape phone */
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation: landscape) {
+  .featured-product-img-wrapper{
+    height: 150px;
+  }
+}
 /* Small devices (tablets, 768px and up) for header */
 @media (min-width: 768px){
 
@@ -155,6 +169,11 @@ main {
 
 /* big landscape tablets, laptops, and desktops */
 @media (min-width: 992px) {
+  .landing-slideshow .owl-item {
+    width: 420px !important;
+    height: 420px !important;
+  }
+
   #vision-parallax{
     height: 350px !important;
   }
@@ -167,9 +186,22 @@ main {
     padding: 10px !important;
   }
 
-  .landing-slideshow .owl-item {
-    width: 420px !important;
-    height: 420px !important;
+  .featured-product-img-wrapper{
+    height: 250px;
+  }
+  
+  .featured-product-img-wrapper img{
+    /* A one-second transition was to disturbing for me */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition:    all 0.3s ease;
+    -o-transition:      all 0.3s ease;
+    -ms-transition:     all 0.3s ease;
+    transition:         all 0.3s ease;
   }
 
-}
+  .featured-product-img-wrapper img:hover {
+    opacity: 0.8;
+    width:   104%;
+    height:  104%; }
+
+  }
