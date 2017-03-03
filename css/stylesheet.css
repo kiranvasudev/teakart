@@ -5,6 +5,14 @@ body{
   flex-direction: column;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Crimson Text', serif;
+}
+
+p,a, span{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 main {
   flex: 1 0 auto;
 }
@@ -114,8 +122,9 @@ main {
 .tea-slider-content {
   color: black;
   /*font: bold 24px/45px Helvetica, Sans-Serif; */
-  font:bold 17px Helvetica,Sans-Serif;
-  /*letter-spacing: -1px;  */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
   padding-left: 6px;
 }
 
@@ -189,7 +198,7 @@ main {
   .featured-product-img-wrapper{
     height: 250px;
   }
-  
+
   .featured-product-img-wrapper img{
     /* A one-second transition was to disturbing for me */
     -webkit-transition: all 0.3s ease;
